@@ -1,4 +1,10 @@
 public class GreatestCommonDivisor {
+ public static void main(String[] args) {
+     //   System.out.println(GreatestCommonDivisor.getGreatestCommonDivisor(25,15));
+        System.out.println(GreatestCommonDivisor.getGreatestCommonDivisor(12,30));
+        //System.out.println(GreatestCommonDivisor.getGreatestCommonDivisor(9,18));
+       // System.out.println(GreatestCommonDivisor.getGreatestCommonDivisor(81,153));
+    }
     public static int getGreatestCommonDivisor(int first, int second) {
         int deviderFirst = 0;
         int deviderSecond = 0;
