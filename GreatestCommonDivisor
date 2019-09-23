@@ -1,0 +1,45 @@
+public class GreatestCommonDivisor {
+    public static int getGreatestCommonDivisor(int first, int second) {
+        int deviderFirst = 0;
+        int deviderSecond = 0;
+        int i = 1;
+        int j = 1;
+        int newFirst = first;
+        int newSecond = second;
+
+        if (first > 10 && second > 10) {
+            do {
+                do {
+                    if (first % i == 0) {
+                        if (i > deviderFirst) {
+                            deviderFirst = i;
+                            if (i == first) {
+                                deviderFirst = i;
+                            }
+                        }
+
+                    }
+                    i++;
+                } while (i != first);
+                do {
+                    while (j != second) {
+                        if (newSecond % j == 0) {
+                            if (j > deviderSecond) {
+                                deviderSecond = j;
+                            }
+                        }
+                        j++;
+                    }
+
+                } while (j != second);
+
+            } while (i < deviderFirst);
+
+            System.out.println("Devider first: " + deviderFirst + " Devider second: " + deviderSecond);
+            return deviderFirst;
+        }
+        return -1;
+
+    }
+}
+
